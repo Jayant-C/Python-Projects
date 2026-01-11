@@ -1,0 +1,11 @@
+username = input("Enter Your Name")
+file = open("User.txt","w")
+file.write(username + "\n")
+file.close()
+print("Name Saved Successfully")
+
+file = open("User.txt", "r")
+content = file.read()
+print("Welcome", content)
+print(len(content))
+file.close()
